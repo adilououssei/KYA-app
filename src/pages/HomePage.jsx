@@ -84,12 +84,12 @@ const HomePage = ({ setCurrentPage, setSelectedProduct }) => {
             <Col md={10}>
               <Carousel>
                 <Carousel.Item>
-                  <div className="bg-primary-gradient hero-section rounded d-flex align-items-center">
+                  <div className="bg-primary-gradient hero-section rounded d-flex align-items-center position-relative overflow-hidden">
                     <Container>
                       <Row className="align-items-center">
                         <Col md={6}>
                           <h1 className="display-3 fw-bold mb-4">
-                            Collection Printemps 2025
+                            Nouvelle Collection
                           </h1>
                           <p className="lead fs-4 mb-5">
                             Jusqu'à 10% de réduction sur les bons d'achat
@@ -103,17 +103,25 @@ const HomePage = ({ setCurrentPage, setSelectedProduct }) => {
                             Acheter maintenant →
                           </Button>
                         </Col>
+                        <Col md={6} className="text-center">
+                          <img 
+                            src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=500" 
+                            alt="Fashion Model"
+                            className="img-fluid"
+                            style={{ maxHeight: '400px', objectFit: 'contain' }}
+                          />
+                        </Col>
                       </Row>
                     </Container>
                   </div>
                 </Carousel.Item>
                 <Carousel.Item>
-                  <div className="bg-dark hero-section rounded d-flex align-items-center text-white">
+                  <div className="bg-dark hero-section rounded d-flex align-items-center text-white position-relative overflow-hidden">
                     <Container>
                       <Row className="align-items-center">
                         <Col md={6}>
                           <h1 className="display-3 fw-bold mb-4">
-                            Nouvelle Collection
+                            Mode Tendance
                           </h1>
                           <p className="lead fs-4 mb-5">
                             Découvrez les dernières tendances mode
@@ -126,6 +134,46 @@ const HomePage = ({ setCurrentPage, setSelectedProduct }) => {
                           >
                             Voir maintenant →
                           </Button>
+                        </Col>
+                        <Col md={6} className="text-center">
+                          <img 
+                            src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=500" 
+                            alt="Fashion Collection"
+                            className="img-fluid"
+                            style={{ maxHeight: '400px', objectFit: 'contain' }}
+                          />
+                        </Col>
+                      </Row>
+                    </Container>
+                  </div>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="hero-section rounded d-flex align-items-center text-white position-relative overflow-hidden" style={{ background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)' }}>
+                    <Container>
+                      <Row className="align-items-center">
+                        <Col md={6}>
+                          <h1 className="display-3 fw-bold mb-4">
+                            Style Unique
+                          </h1>
+                          <p className="lead fs-4 mb-5">
+                            Exprimez votre personnalité avec nos créations
+                          </p>
+                          <Button 
+                            variant="light" 
+                            size="lg" 
+                            className="rounded-pill px-5"
+                            onClick={() => setCurrentPage('catalog')}
+                          >
+                            Explorer →
+                          </Button>
+                        </Col>
+                        <Col md={6} className="text-center">
+                          <img 
+                            src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=500" 
+                            alt="Fashion Style"
+                            className="img-fluid"
+                            style={{ maxHeight: '400px', objectFit: 'contain' }}
+                          />
                         </Col>
                       </Row>
                     </Container>
